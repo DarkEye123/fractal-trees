@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas></canvas>
+    <button class="generate-tree-button">Generate Random Tree</button>
+    <script src="script.js"></script>
+    <div class="input-panel">
+      <label for="branchWidth">
+        branch width
+        <input
+          type="range"
+          value="10"
+          max="50"
+          min="5"
+          id="branchWidth"
+          oninput="onChange(event)"
+        />
+      </label>
+      <label for="angle">
+        starting angle
+        <input
+          type="range"
+          value="0"
+          max="40"
+          min="-40"
+          id="angle"
+          oninput="onChange(event)"
+        />
+      </label>
+      <label for="len">
+        starting length
+        <input
+          type="range"
+          value="200"
+          max="250"
+          min="100"
+          id="len"
+          oninput="onChange(event)"
+        />
+      </label>
+      <label for="leavesLength">
+        amount of leaves
+        <input
+          type="range"
+          value="-15"
+          max="-4"
+          min="-30"
+          id="leavesLength"
+          step="2"
+          oninput="onChange(event)"
+        />
+      </label>
+    </div>
+  </body>
+</html>
